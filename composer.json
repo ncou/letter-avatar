@@ -1,18 +1,23 @@
 {
-    "name": "yohang88/letter-avatar",
+    "name": "vjoao/letter-avatar",
     "description": "Generate user avatar using name initials letter.",
     "keywords": [
         "letter avatar",
         "avatar",
         "profile picture"
     ],
-    "homepage": "https://github.com/yohang88/letter-avatar",
+    "homepage": "https://github.com/vjoao/letter-avatar",
     "license": "MIT",
     "authors": [
         {
             "name": "Yoga Hanggara",
             "email": "yohang88@gmail.com",
             "homepage": "https://yohang.net",
+            "role": "Developer"
+        },
+        {
+            "name": "Victor Nascimmento",
+            "email": "victormota15@gmail.com",
             "role": "Developer"
         }
     ],
@@ -26,7 +31,7 @@
     },
     "autoload": {
         "psr-4": {
-            "YoHang88\\LetterAvatar\\": "src/"
+            "VJoao\\LetterAvatar\\": "src/"
         }
     }
 }
