@@ -1,6 +1,6 @@
 <?php
 
-namespace YoHang88\LetterAvatar;
+namespace VJoao\LetterAvatar;
 
 use Intervention\Image\ImageManager;
 
@@ -114,17 +114,7 @@ class LetterAvatar
     public function generate()
     {
         $words = $this->break_words($this->name);
-
-        $number_of_word = 1;
-        foreach ($words as $word) {
-
-            if ($number_of_word > 2)
-                break;
-
-            $this->name_initials .= strtoupper(trim($word[0]));
-
-            $number_of_word++;
-        }
+        $this->name_initials = strtoupper(trim($words[0][0])).strtoupper(trim($words[count($words)-1][0]));
 
         $colors = [
             "#1abc9c", "#2ecc71", "#3498db", "#9b59b6", "#34495e", "#16a085", "#27ae60", "#2980b9", "#8e44ad", "#2c3e50",
@@ -148,9 +138,9 @@ class LetterAvatar
             $canvas = $this->image_manager->canvas(480, 480, $color);
         }
 
-        $canvas->text($this->name_initials, 220, 240, function ($font) {
+        $canvas->text($this->name_initials, 240, 240, function ($font) {
             $font->file(__DIR__ . '/fonts/arial-bold.ttf');
-            $font->size(220);
+            $font->size(240);
             $font->color('#ffffff');
             $font->valign('middle');
             $font->align('center');
