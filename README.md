@@ -15,7 +15,7 @@ Generate user avatar using name initials letter.
 Via Composer
 
 ``` bash
-$ composer require yohang88/letter-avatar
+$ composer require vjoao/letter-avatar
 ```
 
 ### Implementation
@@ -23,7 +23,7 @@ $ composer require yohang88/letter-avatar
 ``` php
 <?php
 
-use YoHang88\LetterAvatar\LetterAvatar;
+use VJoao\LetterAvatar\LetterAvatar;
 
 $avatar = new LetterAvatar('Steven Spielberg');
 
