@@ -117,12 +117,20 @@ class LetterAvatar
         $this->name_initials = strtoupper(trim($words[0][0])).strtoupper(trim($words[count($words)-1][0]));
 
         $colors = [
-            "#1abc9c", "#2ecc71", "#3498db", "#9b59b6", "#34495e", "#16a085", "#27ae60", "#2980b9", "#8e44ad", "#2c3e50",
-            "#f1c40f", "#e67e22", "#e74c3c", "#ecf0f1", "#95a5a6", "#f39c12", "#d35400", "#c0392b", "#bdc3c7", "#7f8c8d",
+            "#F44336",
+            "#3F51B5",
+            "#3F51B5",
+            "#03A9F4",
+            "#009688",
+            "#4CAF50",
+            "#CDDC39",
+            "#FFEB3B",
+            "#FF9800",
+            "#795548"
         ];
 
-        $char_index  = ord($this->name_initials[0]) - 64;
-        $color_index = $char_index % 20;
+        $char_index  = ord($this->name_initials[0]) + ord($this->name_initials[1]) - 64;
+        $color_index = $char_index % 10;
         $color       = $colors[$color_index];
 
 
