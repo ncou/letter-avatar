@@ -124,7 +124,7 @@ class LetterAvatar
             "#009688",
             "#4CAF50",
             "#CDDC39",
-            "#FFEB3B",
+            "#FBC02D",
             "#FF9800",
             "#795548"
         ];
@@ -147,7 +147,7 @@ class LetterAvatar
         }
 
         $canvas->text($this->name_initials, 240, 240, function ($font) {
-            $font->file(__DIR__ . '/fonts/mononoki-Regular.ttf');
+            $font->file(__DIR__ . '/fonts/mononoki-Bold.ttf');
             $font->size(240);
             $font->color('#ffffff');
             $font->valign('middle');
